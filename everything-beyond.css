@@ -1,0 +1,159 @@
+/* Hero Section */
+.hero-section {
+    padding: 60px 0;
+}
+
+.book-layout {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    gap: 40px;
+    align-items: center;
+}
+
+/* Book Image */
+.book-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Book Info */
+.book-info {
+    padding: 20px;
+}
+
+.book-info h1 {
+    color: #2D3748;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.book-info h2 {
+    font-size: 1.5rem;
+    color: #4A5568;
+    margin-bottom: 1.5rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #553C9A;
+    margin: 1.5rem 0;
+}
+
+.description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4A5568;
+    margin-bottom: 2rem;
+}
+
+.add-to-cart {
+    background: #553C9A;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background: #6B46C1;
+}
+
+/* Feature Boxes */
+.feature-boxes {
+    padding: 60px 0;
+    background: #fff;
+}
+
+.feature-boxes h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2D3748;
+    margin-bottom: 3rem;
+}
+
+.boxes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.feature-box {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.feature-box h3 {
+    color: #553C9A;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #E2E8F0;
+}
+
+.feature-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-box li {
+    margin: 15px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #4A5568;
+}
+
+.feature-box li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: #553C9A;
+}
+
+/* Purple Footer */
+.main-footer {
+    background: #553C9A;
+    color: white;
+}
+
+.main-footer a {
+    color: #E9D8FD;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .book-layout {
+        grid-template-columns: 1fr;
+    }
+    
+    .book-image {
+        text-align: center;
+    }
+    
+    .boxes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .boxes-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.coming-soon-banner {
+    background: #553C9A;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
